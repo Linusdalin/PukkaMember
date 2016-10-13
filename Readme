@@ -33,29 +33,39 @@ Generic functionality to quickly set up email capturing or account management fo
           *     - Log all service actions to stdout
           *     - Generate Services automatically
 
-             - Implement Organisation
-                - Add tables
-                - Add to session & login
-                - Add to demo site page
-                - Add to login form
-                - Add validation of organisation in services
-                - Add default organisation
-                - Add user to organisation with confirm
+          *     - Implement Organisation
+          *        - Add tables
+          *        - Add to session & login
+          *        - Add to demo site page
+          *        - Add to login form
+          *        - Add validation of organisation in services
+          *        - Add default organisation
+
+          *     - Persistence in generated Service, Table and Object pages
+
+              - Check session poke not updating error
+              - Home Loggedin redirect to dashboard
+
+              - Virality
+                - Activation email and activation page (with code)
+                - Invite new User with email address
+                - Add user/new user to organisation with email confirm
+                - Switch Organisation in top bar
+
 
              - Auto generate a service test page
-             - Persistence in generated Service, Table and Object pages
 
-             - Activation email
              - Build forgot password email functionality
              - Send email notification after password change
              - Create instruction document on demo site example
 
-             - Add a table filter parameter to a page URL to automatically filter a table
-             - Table rendering with cross reference and a drop down selection
-             - More informative output from db generation
-             - Automatically add pages from menu in Backoffice constructor call to set menu
-             - Create an application file to be included in the backOffice
-             - Automatically add services to web.xml
+            - Backoffice
+                - Add a table filter parameter to a page URL to automatically filter a table
+                - Table rendering with cross reference and a drop down selection
+                - More informative output from db generation
+                - Automatically add pages from menu in Backoffice constructor call to set menu
+                - Create an application file to be included in the backOffice
+                - Automatically add services to web.xml
 
             BackOffice Setup:
 
