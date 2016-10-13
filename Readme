@@ -1,0 +1,67 @@
+
+Generic functionality to quickly set up email capturing or account management for a beta test
+
+
+            The system can handle the following responsibilities
+
+                - Register users
+                - Support email validation to activate an account
+                - Handle sessions with login and expiry
+                - Support validation of session tokens
+
+
+            Services:
+
+            POST /User  ?userName=<string>&name=<string>email=<string>      Create a new user
+            GET  /User                                                      Get all users as JSON
+            GET  /User  ?id=<long>                                          Get one user
+
+            POST /Activate
+
+            POST /Login ?userName=<string>&password=<string>                Login an active user. Returns a session token
+
+
+            Demo Site
+            The demo site handles most of the basic functionality needed for the service
+
+
+            //TODO:
+
+          *     - Fix string validation in service
+          *     - Enforce unique name/email in registration service
+          *     - Support session expiry
+          *     - Log all service actions to stdout
+          *     - Generate Services automatically
+
+             - Implement Organisation
+                - Add tables
+                - Add to session & login
+                - Add to demo site page
+                - Add to login form
+                - Add validation of organisation in services
+                - Add default organisation
+                - Add user to organisation with confirm
+
+             - Auto generate a service test page
+             - Persistence in generated Service, Table and Object pages
+
+             - Activation email
+             - Build forgot password email functionality
+             - Send email notification after password change
+             - Create instruction document on demo site example
+
+             - Add a table filter parameter to a page URL to automatically filter a table
+             - Table rendering with cross reference and a drop down selection
+             - More informative output from db generation
+             - Automatically add pages from menu in Backoffice constructor call to set menu
+             - Create an application file to be included in the backOffice
+             - Automatically add services to web.xml
+
+            BackOffice Setup:
+
+             - Include pukkaBootstrap from Artifacts
+             - Create the BackOfficeFactory Class
+             - Copy the admin services to web.xml
+             - Copy adminCommon to web
+             - Run /admin
+This file was modified by IntelliJ IDEA 11.1.5 for binding GitHub repository
